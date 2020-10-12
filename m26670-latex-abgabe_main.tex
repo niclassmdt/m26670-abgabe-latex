@@ -1,6 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage{graphicx}
-
+\include{config/packages.tex}
  
 \begin{document}
 
@@ -27,16 +26,17 @@ hier kommt Paragraphtext.
 \subparagraph{Erster Unter-Paragraph}
 hier kommt Unter-Paragraphtext.
 
-\begin{figure}
+\newpage
+\section{Zweites Kapitel}
+
+Diese Abbildung \ref{fig: Blume} zeigt eine Blume.
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{img/bild1.jpg}
     \caption[Blume]{Blume in Gras mit Seifenblasen}
     \label{fig: Blume}
 \end{figure}
-
-
-\section{Zweites Kapitel}
-
 hier kommt weiterer Text hin.
 alles geklappt!
 Diese Abbildung \ref{fig: Blume} zeigt eine Blume.
