@@ -8,8 +8,10 @@
 \newpage
 \listoffigures
 \newpage
-
-
+%listoflistings umbennen in Listingverzeichnis
+\renewcommand*{\listoflistingscaption}{Listingverzeichnis}s
+\listoflistings
+\newpage
 
 \section{Erstes Kapitel}
 hier kommt Text hin.
@@ -17,6 +19,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 \begin{listing}[H]
     \caption{Beispiel Javacode}
+    \label{lst:mein_quelltext}
     \begin{minted}[
         linenos,
         numbersep=5pt,
@@ -31,7 +34,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 \end{listing}
 
 \subsection{Erstes Unterkapitel}
-hier kommt Unterkapiteltext hin.
+hier kommt Unterkapiteltext hin und referenziert \ref{lst:mein_quelltext}
 
 \subsubsection{Erstes Unter-Unter-Kapitel}
 hier kommt Unter-Unter-Kapiteltext hin.
