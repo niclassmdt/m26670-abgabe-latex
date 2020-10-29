@@ -4,6 +4,20 @@
 \parindent 0ex
 \begin{document}
 
+%\AddToShipoutPicture{
+%  \ifthenelse{
+%    \isodd{
+%        \value{page}
+%    }
+%  }
+%  {%zum Gap entfernen das Kommentar
+%    \transparent{0.2}\includegraphics[width=\paperwidth, height=\paperheight]{img/bild1.jpg}
+%  }
+%  {%zum Gap entfernen das Kommentar
+%    \transparent{1}\includegraphics[width=\paperwidth, height=\paperheight]{img/bild1.jpg}
+%  }  
+%}
+
 \tableofcontents
 \newpage
 \listoffigures
@@ -43,8 +57,12 @@ hier kommt Unter-Unter-Kapiteltext hin.
 hier kommt Paragraphtext.
 
 \subparagraph{Erster Unter-Paragraph}
-hier kommt Unter-Paragraphtext.
+hier kommt fetter \textbf{Unter-Paragraphtext}.
+hier kommt krusiver \textit{Unter-Paragraphtext}.
 
+%Windowstaste Punkt
+hier kommt zitierter „Unter-Paragraphtext“. 
+hier kommt zitierter \enquote{Unter-Paragraphtext}
 \newpage
 \section{Zweites Kapitel}
 
