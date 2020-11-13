@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 \include{config/packages}
 
+\addbibresource{lit/lit.bib}
 \parindent 0ex
 \begin{document}
 
@@ -52,8 +53,11 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 \end{listing}
 
 \subsection{Erstes Unterkapitel}
-hier kommt Unterkapiteltext hin und referenziert \ref{lst:mein_quelltext}
-
+hier kommt Unterkapiteltext hin und referenziert \ref{lst:mein_quelltext} \nameref{lst:mein_quelltext}
+Hier wird aus einem Buch verwiesen: verwiesener Text \footnote{Vgl. \cite[S. 190]{teller1994visibility}} .
+\begin{quote}
+    ich zitiere Text aus einem Buch. \footnote{Vgl. \cite[S. 190]{wiki:Fußball}}
+\end{quote}
 \subsubsection{Erstes Unter-Unter-Kapitel}
 hier kommt Unter-Unter-Kapiteltext hin.
 
@@ -70,7 +74,7 @@ hier kommt zitierter \enquote{Unter-Paragraphtext}
 \newpage
 \section{Zweites Kapitel}
 
-Diese Abbildung \ref{fig: Blume} zeigt eine Blume.
+Diese Abbildung \ref{fig: Blume} \nameref{fig: Blume} zeigt eine Blume.
 
 \begin{figure}[H]
     \centering
@@ -81,4 +85,6 @@ Diese Abbildung \ref{fig: Blume} zeigt eine Blume.
 hier kommt weiterer Text hin.
 alles geklappt!
 Diese Abbildung \ref{fig: Blume} zeigt eine Blume.
+
+\printbibliography
 \end{document}

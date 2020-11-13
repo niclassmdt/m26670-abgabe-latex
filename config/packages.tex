@@ -23,3 +23,23 @@
 
 %Einfuegen voll Tabellen
 \usepackage{tabularx}
+
+%Literaturverzeichnisse verwenden
+\usepackage[style=authortitle, natbib, backend=biber]{biblatex}
+\makeatletter% 
+\long\def\@makefntext#1{%
+  \parindent 1em\noindent \hb@xt@ 1.8em{\hss  \hbox {{\normalfont \@thefnmark }}. }#1}%
+\makeatother
+
+%Referenzen erstellen
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    pdfborder= 0 0 0
+}
+
+%Refernenzieren eines Kapitels mit seinem Namen
+\usepackage{nameref}
