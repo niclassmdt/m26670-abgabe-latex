@@ -31,9 +31,24 @@
 \newpage
 \include{content/01_erstes_kapitel}
 \include{content/02_zweites_kapitel}
-
+siehe \nameref{lab:eidessstattliche_erklaerung}.
 
 \printbibliography
-\include{content/eidesstattliche_erklaerung/eidesstattliche_erklärung}
+%\include{content/eidesstattliche_erklaerung/eidesstattliche_erklärung}
+
+%Hintergrundbild fuer Eidessstattliche Erklärung entfernen
+%\ClearShipoutPicture
+%setcounter -> Zahl vor Inhaltsverzeichnis weg bei Eidesstattliche Erklärung
+\setcounter{secnumdepth}{0}
+\includepdf[
+    addtotoc={
+        1, % page number
+        section, % section oder subsection...
+        1, % level, 1 fuer sections...
+        Eidesstattliche Erklärung, % heading, Titel in TOC
+        lab:eidessstattliche_erklaerung% \ref
+    }
+]{signiert.pdf}
+
 
 \end{document}
