@@ -39,16 +39,17 @@ siehe \nameref{lab:eidessstattliche_erklaerung}.
 
 \appendix
 %subsections notation  A.1 -> A  , A.1.1 -> A.1
-\renewcommand{\thesubsection}{\Alph{\subsection}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
 %subsections notation  A.1 -> A  , A.1.1 -> A.1
 \renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
 %Fange im Anhang mit neuem Figurecounter an
-\setcounter{figure}{0}
-\label{lab:erster_anhang}
+
 
 \section*{Anhang}
 \addcontentsline{toc}{section}{Anhang}
 \subsection{Erstes Anhang Kapitel}
+\setcounter{figure}{0}
+\label{lab:erster_anhang}
 
 \begin{figure}[H]
     \centering
