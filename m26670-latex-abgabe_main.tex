@@ -34,7 +34,37 @@
 siehe \nameref{lab:eidessstattliche_erklaerung}.
 
 \printbibliography
+
+\newpage
+
+\appendix
+%subsections notation  A.1 -> A  , A.1.1 -> A.1
+\renewcommand{\thesubsection}{\Alph{\subsection}}
+%subsections notation  A.1 -> A  , A.1.1 -> A.1
+\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
+%Fange im Anhang mit neuem Figurecounter an
+\setcounter{figure}{0}
+\label{lab:erster_anhang}
+
+\section*{Anhang}
+\addcontentsline{toc}{section}{Anhang}
+\subsection{Erstes Anhang Kapitel}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{img/bild1.jpg}
+    \caption[Blume]{Blume in Gras mit Seifenblasen}
+    \label{fig:anhang_blume}
+\end{figure}
+
+
+
+\newpage
+
+
+
 %\include{content/eidesstattliche_erklaerung/eidesstattliche_erklärung}
+
 
 %Hintergrundbild fuer Eidessstattliche Erklärung entfernen
 %\ClearShipoutPicture
@@ -46,7 +76,7 @@ siehe \nameref{lab:eidessstattliche_erklaerung}.
         section, % section oder subsection...
         1, % level, 1 fuer sections...
         Eidesstattliche Erklärung, % heading, Titel in TOC
-        lab:eidessstattliche_erklaerung% \ref
+        lab:eidessstattliche_erklaerung % \ref
     }
 ]{signiert.pdf}
 
