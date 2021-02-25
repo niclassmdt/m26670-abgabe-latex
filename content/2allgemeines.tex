@@ -1,0 +1,47 @@
+\section{Allgemeines} \label{chap:2}
+
+\subsection{Verwendung}
+\LaTeX\ ist sehr vielfältig einsetzbar, besonders, weil es für alle Betriebssysteme verfügbar ist. \LaTeX\ wird in zahlreichen Gebieten eingesetzt, beispielsweise Schulen, Hochschulen und Universitäten. Dort, wo vor allem wissenschaftlich gearbeitet wird. Allgemein haben Wissenschaftsverlage, wie Springer, aber auch wissenschaftliche Zeitschriften, \LaTeX\ zum Standard ihrer Textverarbeitung gemacht. Diplomarbeiten und andere Arbeiten, die strengen typographischen Ansprüchen entsprechen müssen, werden ebenfalls größtenteils mit \LaTeX\ geschrieben. 
+Über Pakete können im Grunde Anwender jeden Fachbereiches einfach Ihre Vorstellungen umsetzen. Musiker können \LaTeX\ zum Notensatz verwenden, Mathematiker zum Einbinden von komplexen Formeln oder auch Linguisten zur Ausgabe von Lautschrift. 
+
+\subsection{Funktionalität}
+\LaTeX\ ist im Grunde in einer Datei festgelegt: latex.ltx, die Makrodefinitionen enthält. Nach Ausführung der Definitionen wird diese in die Datei latex.fmt umgewandelt, welche beim Erzeugen des Dokuments eingelesen wird. Wie bereits erwähnt kann die \LaTeX\ Makrobibliothek einfach erweitert werden. Diese Erweiterungen bauen auf der latex.ltx Datei auf und sind für spezielle Bedürfnisse u.a. von Anwendern entwickelt und dann der Allgemeinheit mit meist freier Lizenz zur Verfügung gestellt worden. Der Code wird in einer .tex Datei geschrieben, welche letztendlich kompiliert wird. Zum einen kann die .tex Datei mit \LaTeX\ , aber auch mit PDF\LaTeX\ kompiliert werden, womit entsprechend eine DVI oder direkt eine PDF-Datei erzeugt wird.  \cite[vgl.][S.3f]{Oechsner2015}
+
+\subsection{Kein WYSIWYG}
+Es gibt zwei Arten von Textverarbeitungsprogrammen. Die Typischen, wie z.B. Word, arbeiten nach dem What-you-see-is-what-you-get-Prinzip. Bei \TeX\ und \LaTeX\ arbeitet der Autor mit Textdateien, in denen er innerhalb eines Textes anders zu formatierende Passagen oder Überschriften mit Befehlen textuell auszeichnet. Der Autor schreibt also im Prinzip Quellcode, der dann verarbeitet wird. Bevor das \LaTeX-System den Text entsprechend setzen kann, muss es den Quellcode verarbeiten. \TeX\ generiert daraus nun ein Layout mit den entsprechenden Texten. Das Dokument kann später nach PDF, HTML und PostScript ausgegeben werden. Im Vergleich zu herkömmlichen Textverarbeitungsprogrammen muss eine längere Einarbeitungszeit eingeplant werden, dafür kann das Aussehen des Resultats seinen Ansprüchen entsprechend gestaltet werden. Folglich wird das Verfahren von \LaTeX\ auch mit WYSIWYAF (What you see is what you asked for). umschrieben. Zudem gibt es auch grafische Oberflächen, die mit LaTeX arbeiten können, die neuen und ungeübten Usern den Einstieg deutlich erleichtern können. Grundlegend wäre es möglich ein Dokument vollkommen ohne Maus zu verfassen.
+Der wesentliche Unterschied von \TeX-Dokumenten ist also, dass sie von außerordentlicher Qualität sind und, dass die Handhabung mathematischer und technischer Formeln und Ausdrücke vergleichbar einfach ist. \cite[vgl.][S.2]{Oechsner2015}
+
+\subsubsection{Logisches Markup}
+Bei \LaTeX\ wird mit einem logischen Markup gearbeitet. Wenn eine Überschrift erstellt wird, wird der Text nicht wie in \TeX\ rein optisch hervorgehoben, beispielsweise per Fettdruck und Größenveränderung, sondern die Überschrift wird als solche ausgezeichnet. In Klassen- oder sty-Dateien wird dann global festgelegt, wie so eine gekennzeichnete Überschrift allgemein aussehen soll, ob sie Fett sein soll, was für eine Größe sie haben soll, ob sie mit einer inkrementierbaren Nummer versehen werden soll. Dadurch erhalten alle diese Textstellen eine einheitliche Formatierung. Weiterhin kann mit Befehlen, wie \textbackslash tableofcontents automatisch aus allen Überschriften im Dokument ein Inhaltsverzeichnis generieren lassen.
+
+\subsection{Unabhängigkeit}
+Mittels \TeX\ wird aus dem Quellcode eine DVI-Datei
+erzeugt. Hierbei steht DVI für „Device Independent“, was darauf zurückzuführen
+ist, dass \TeX\ und die generierten Dateien betriebssystemunabhängig sind. Um die
+Dateien dann auszudrucken oder anzusehen, müssen diese in ein Format, wie z.B.
+PS oder PDF, umgewandelt werden. \LaTeX\ ist wie \TeX\ weitestgehend rechnerunabhängig und ebenfalls unabhängig vom verwendeten Drucker ist. So sind die beiden Ausgabeformate DVI und PDF hinsichtlich der Schriftarten, Schriftgröße, sowie der Zeilen-und Seitenumbrüche exakt gleich im Druck, wie auf dem PC. 
+\LaTeX\ ist ebenfalls nicht auf die Schriftarten des jeweiligen Betriebssystems angewiesen, denn es enthält bereits eine Reihe eigener Schriftarten, die für den Druck optimiert sind.
+\cite[vgl.][S.45f]{Oechsner2015}
+
+\subsection{Einschätzung}
+\LaTeX\ ist eine Programmiersprache, welche, wenn sie beherrscht wird sehr flexibel ist Dokumente nach eigenen Vorstellungen zu erstellen.
+
+\subsubsection{Vor- und Nachteile}
+\begin{minipage}[t]{0.42\linewidth}
+Nachteile: 
+\begin{itemize}
+    \item Einstiegshürde - erfordert mehr \,\,\,\,\,\, Zeit zum Lernen der Sprache
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.48\linewidth}
+Vorteile: 
+\begin{itemize}
+\item Fokus auf den Inhalt 
+\item Vollständige Kontrolle über das Layout
+\item Einfaches Referenzieren
+\item Keine Kompatibilitätsprobleme
+    \item Wissenschaftlichen Funktionen
+    \item Mathematischer Formelsatz 
+    \item Kostenfrei 
+\end{itemize}
+\end{minipage}

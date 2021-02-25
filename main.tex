@@ -1,0 +1,45 @@
+\documentclass[a4paper,english,ngerman,oneside]{article}
+% pakete importieren
+\include{packages}
+
+\begin{document}
+
+% setup der Hintergründe
+\include{config/background}
+    
+    \include{content/deckblatt}
+    % INHALTSVERZEICHNIS
+    \tableofcontents
+    \newpage
+
+    % abstand zwischen Absätzen
+    \parskip 8pt
+    \include{content/hinweise}
+    \include{content/1einfuehrung}
+    \include{content/2allgemeines}
+    \include{content/3grundvoraussetzungen}
+
+    \newpage
+    % ABBILDUNGSVERZEICHNIS
+    \listoffigures
+    \newpage
+
+    % LISTINGVERZEICHNIS
+    \renewcommand{\listoflistingscaption}{Listingverzeichnis}
+    \listoflistings
+    \newpage
+
+    % LITERATURVERZEICHNIS
+    \bibliographystyle{plain} 
+    \bibliography{lit/lit.bib}
+
+    \include{content/appendix/appendix}
+
+    % Eidesstattliche Erklärung
+    \include{config/eidesstattliche_untersch}
+   
+\end{document}
+
+
+
+

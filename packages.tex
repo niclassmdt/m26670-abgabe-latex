@@ -1,0 +1,47 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+% grafiken einblenden
+\usepackage{graphicx}
+% deutsche notation Literaturverzeichnis etc. 
+\usepackage[english, ngerman]{babel}
+% einrückung neuer Paragraphen auf 0 setzen 
+\parindent 0pt
+\usepackage[T1]{fontenc}
+% deutsche Anführungszeichen
+\usepackage[autostyle, german=guillemets, german=quotes]{csquotes}
+% grafiken gezielt platzieren
+\usepackage{float}
+% quellcodeimplementation mit highlighting
+\usepackage{minted}
+% hintergrundbilder
+\usepackage{eso-pic}
+% transparenz
+\usepackage{transparent}
+% abwechselnder hintergrund
+\usepackage{ifthen}
+% tabellen
+\usepackage{tabularx}
+% literaturverzeichnis
+\usepackage{natbib}
+% formatierung footmarks
+\makeatletter%
+\long\def\@makefntext#1{%
+    \parindent 1em\noindent \hb@xt@ 1.8em{\hss \hbox{{\normalfont \@thefnmark}}. }#1}%
+\makeatother
+% linkeinfärbung und referenz
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    pdfborder= 0 0 0 % entfernt rahmen, falls noch vorhanden
+}
+% kapitelreferenzierung
+\usepackage{nameref}
+% pdfs einfügbar
+\usepackage{pdfpages}
+% TikZ zum Zeichnen von Bildern
+\usepackage{tikz}
+%urls in bibtex
+\usepackage{url}

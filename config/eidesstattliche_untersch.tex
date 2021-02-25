@@ -1,0 +1,12 @@
+% eidesstattliche als .tex seite 
+   % \include{content/misc/eidesstatliche}
+   \ClearShipoutPicture
+   \setcounter{secnumdepth}{0}
+   \includepdf[
+        addtotoc={
+            1, % seitennummer
+            section, % section: sect. oder subsection
+            1, % level: 1 (heißt section), 2 (heißt subsection)
+            Eidesstattliche Erklärung, % heading: titel in toc
+            lab:eidesstattliche_erklaerung % \ref
+        }]{content/misc/eidesstatliche_unterschrieben.pdf}

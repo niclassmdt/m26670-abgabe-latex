@@ -1,0 +1,51 @@
+\appendix 
+\section*{Anhang}   \label{chap:appendix}
+\addcontentsline{toc}{section}{Anhang}
+
+% nummerierung wird fortgesetzt
+\renewcommand{\thesubsection}{\Alph{subsection}}
+% abbildungsnotation des Anhangs verändern
+\renewcommand{\thefigure}{\thesubsection.\arabic{figure}}
+\renewcommand{\theHfigure}{\thesubsection.\arabic{figure}}
+\renewcommand{\thelisting}{\thesubsection.\arabic{listing}}
+% abbildungscounter zurücksetzen
+\setcounter{figure}{0}
+\setcounter{listing}{0}
+
+\subsection{Nachbereitung}
+  
+Diese Abgabe habe ich in meinem 4. Semester im Fach \textit{Wissenschaftliche Methodik} mit einem Kommilitonen geschrieben. Die Aufgabe bestand darin einen wissenschaftlichen Text über \LaTeX\ zu schreiben. In dieser Abgabe habe ich nur Teile des Dokuments benutzt und an die Anforderungen angepasst.
+Ich hoffe ich habe alles richtig gemacht und Sie können diese Abgabe mit einem grünen Haken abhaken wie in der mit TikZ selbstgezeichneten Abbildung \ref{fig:tikz}.
+Der dazugehörige Code befindet sich in Listing \ref{lst:tikz}.
+Standardmäßig wird in TikZ über die Angabe von Koordinatenpaaren gezeichnet. Der Koordinatenursprung ist wie im mathematischen Sinne zu verstehen links unten und nicht wie in der Computergrafik typisch links oben. \cite[vgl.][S.343ff]{Vosz2018}
+\begin{figure}[htb]
+    \centering
+    \begin{tikzpicture}
+        %2 Linien
+        \draw[green, line width=4] (1,0) -- (0,1);
+        \draw[green, line width=4] (1,0) -- ++(2,2);
+    \end{tikzpicture}
+    \label{fig:tikz}
+    \caption{Grüner Haken gezeichnet mit TikZ}
+\end{figure}
+
+\begin{listing}[H]
+    \caption[TikZ]{Verwendung von TikZ}
+    \begin{minted}
+    [
+    firstnumber=1,
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    linenos
+    ]
+{Tex} 
+\begin{tikzpicture}
+    %2 Linien
+    \draw[green, line width=4] (1,0) -- (0,1);
+    \draw[green, line width=4] (1,0) -- ++(2,2);
+\end{tikzpicture}
+    \end{minted}
+    \label{lst:tikz}
+\end{listing}
+\setcounter{figure}{0}

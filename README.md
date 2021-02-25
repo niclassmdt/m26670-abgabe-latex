@@ -1,3 +1,1 @@
-# m26670-abgabe-latex
-hi
-hallo
+# m26665-abgabe-latex
